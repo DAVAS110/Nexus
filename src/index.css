@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Tiro Bangla Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tiro Bangla Italic"),
+    url("./assets/font/TiroBangla-Italic.woff") format("woff");
+}
+
+body {
+  background-color: #000;
+}
+
+Canvas {
+  height: 100vh !important;
+}
+
+/*NavBar Hover*/
+.navbar-hover::after, .navbar-hover::before {
+  content: '';
+  width: 0%;
+  height: 6px;
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar-hover::before {
+  background: #8C1E1D;
+  margin-left: auto;
+}
+
+.navbar-hover::after {
+  background: #004216;
+}
+
+.navbar-hover:hover::after, .navbar-hover:hover::before {
+  width: 100%;
+}
