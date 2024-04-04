@@ -5,15 +5,6 @@
 }
 
 @tailwind base;
-@layer base {
-  html {
-    @apply text-neutral-800;
-  }
-  html.dark {
-    @apply text-neutral-50;
-    @apply bg-neutral-800;
-  }
-}
 @tailwind components;
 @tailwind utilities;
 
@@ -25,9 +16,14 @@
     url("./assets/font/TiroBangla-Italic.woff") format("woff");
 }
 
-body {
-  background-color: #000;
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Arial"),
+    url("./assets/font/Arial.woff") format("woff");
 }
+
 
 Canvas {
   height: 100vh !important;

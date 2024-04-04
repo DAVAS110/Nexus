@@ -1,27 +1,62 @@
-import Logo from "../assets/Logo.png";
+import blackLogo from "../assets/Black-Logo.png";
+import whiteLogo from "../assets/White-Logo.png";
 
-const Header = () => {
+import { useState, useEffect } from "react";
+
+const Header = ({ scrollStatus }) => {
+  const [headerStatus, setHeaderStatus] = useState("");
+
+  // 0 home, 50 y 100 bg negro = letras blancas
+  // 25 y 75 bg blanco = letras negras
+
+  useEffect(() => {
+    // Actualizar el estado del encabezado según el estado del desplazamiento
+    if (scrollStatus === 50 || scrollStatus === 100 || scrollStatus === 0) {
+      setHeaderStatus("white");
+    } else if (scrollStatus === 25 || scrollStatus === 75) {
+      setHeaderStatus("black");
+    }
+  }, [scrollStatus]);
+
   return (
-    <header className="h-[90px]">
-      <nav className="h-full w-full flex justify-around border-b-4 border-white p-5">
-        <a href="#" className="navbar-hover w-">
-          <span className="text-white text-xl font-semibold font-mono">About Us</span>
+    <header
+      className={`h-[90px] ${
+        headerStatus === "white" ? "bg-black" : "bg-white"
+      }`}
+    >
+      <nav
+        className={`border-${headerStatus} h-full w-full flex items-center justify-around border-b-4 p-5`}
+      >
+        <a href="#AboutUs" className="navbar-hover">
+          <span className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}>
+            About Us
+          </span>
         </a>
-        <a href="#" className="navbar-hover">
-          <span className="text-white text-xl font-semibold font-mono">Our Stand</span>
+        <a href="#OurStand" className="navbar-hover">
+          <span className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}>
+            Our Stand
+          </span>
         </a>
         <div></div>
-        <a href="#" className="navbar-hover">
-          <span className="text-white text-xl font-semibold font-mono">Our Team</span>
+        <a href="#OurTeam" className="navbar-hover">
+          <span className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}>
+            Our Team
+          </span>
         </a>
-        <a href="#" className="navbar-hover">
-          <span className="text-white text-xl font-semibold h-full font-mono">Sponsors</span>
+        <a href="#Sponsors" className="navbar-hover">
+          <span className={`text-${headerStatus}  font-Arial text-[.9rem] font-semibold`}>
+            Sponsors
+          </span>
         </a>
       </nav>
       <div className="relative flex h-2 w-full flex-col items-center">
-        <div className="mt-[-6em]">
-          <a href="#">
-            <img src={Logo} className="h-[11em] w-full" alt="" />
+        <div className="mt-[-5em]">
+          <a href="#Home">
+            {headerStatus === "black" ? (
+              <img src={blackLogo} className="h-[9em] w-full" alt="" />
+            ) : (
+              <img src={whiteLogo} className="h-[9em] w-full" alt="" />
+            )}
           </a>
         </div>
       </div>
