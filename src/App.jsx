@@ -6,6 +6,7 @@ import { useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, Text } from "@react-three/drei";
 import StandNexus from "../public/StandNexus.jsx";
+import Footer from "./Components/Footer.jsx";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -62,7 +63,7 @@ const App = () => {
     <main className="overflow-hidden h-screen">
       <Header className="fixed" scrollStatus={scrollPosition} />
       <div
-        className="snap-y snap-mandatory h-[calc(100vh-90px)] w-screen overflow-x-hidden bg-black"
+        className="snap-y snap-mandatory h-[calc(100vh-90px)] w-screen overflow-x-hidden bg-black mx-auto"
         id="test"
         onScroll={handleScroll}
       >
@@ -143,9 +144,54 @@ const App = () => {
         ></section>
 
         <section
-          className="snap-start h-[calc(100vh-90px)] w-screen flex justify-around bg-black"
+          className="snap-start h-[calc(100vh-90px)] w-screen bg-black grid content-center gap-4"
           id="Sponsors"
-        ></section>
+        >
+          <h1 className="text-5xl text-white text-center font-Tiro font-Tira">
+            Sponsors
+          </h1>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-3 gap-4 content-center">
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+              ></a>
+            </div>
+          </div>
+          <Footer/>
+        </section>
       </div>
     </main>
   );
