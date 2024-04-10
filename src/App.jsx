@@ -8,6 +8,10 @@ import { OrbitControls, Environment, Text } from "@react-three/drei";
 import StandNexus from "../public/StandNexus.jsx";
 import Footer from "./Components/Footer.jsx";
 
+import ExtremeTech from "./assets/Logo-extremeTech.png";
+import Mission from "./assets/Logo-mission.png";
+import Servicentro from "./assets/Logo-servicentro.png";
+
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const rotation = [0, 11, -0.1];
@@ -144,53 +148,59 @@ const App = () => {
         ></section>
 
         <section
-          className="snap-start h-[calc(100vh-90px)] w-screen bg-black grid content-center gap-4"
+          className="snap-start h-[calc(100vh-90px)] w-screen bg-black flex flex-col justify-evenly gap-2"
           id="Sponsors"
         >
           <h1 className="text-5xl text-white text-center font-Tiro font-Tira">
             Sponsors
           </h1>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-3 gap-4 content-center">
+          <div className="flex justify-center flex-col items-center">
+            <div className="grid grid-cols-3 gap-4 content-center group">
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
+              >
+                <img src={Servicentro} alt="" />
+              </a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
+              >
+                <img src={ExtremeTech} alt=""/>
+              </a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
+              >
+                <img src={Mission} alt="" className="h-[8em]"/>
+              </a>
+              <a
+                href="#"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
               <a
                 href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
-              ></a>
-              <a
-                href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
-              ></a>
-              <a
-                href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
-              ></a>
-              <a
-                href="#"
-                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white"
+                className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
               ></a>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </section>
       </div>
     </main>

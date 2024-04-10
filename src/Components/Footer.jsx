@@ -3,14 +3,16 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="relative flex mt-1 justify-around h-[1em] border-white border-t-2">
-      <div className="mt-6">
+    <footer className="flex flex-col w-screen justify-center gap-10">
+      <hr />
+      <div className="flex justify-around items-center">
+      <div className="flex items-center justify-center">
         <span className="text-white">
           © CopyrightNexusRacing 2024 | Todos los derechos reservados
         </span>
       </div>
-      <nav className="mt-6">
-        <ul className="flex gap-[1em] items-center justify-around text-white">
+      <nav className="">
+        <ul className="flex gap-[1em] text-white">
           <li>
             <a href="#">
               <FaInstagram />
@@ -33,6 +35,7 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
+      </div>
     </footer>
   );
 };
