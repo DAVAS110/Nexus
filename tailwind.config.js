@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Tiro: ["Tiro Bangla Italic", "sans-serif"],
-        Arial: ["Arial", "sans-serif"],
+        SairaBold: ["Saira-SemiBold", "sans-serif"],
       },
     },
   },

@@ -17,11 +17,11 @@
 }
 
 @font-face {
-  font-family: "Arial";
+  font-family: "Saira-SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: local("Arial"),
-    url("./assets/font/Arial.woff") format("woff");
+  src: local("Saira-SemiBold"),
+    url("./assets/font/Saira-SemiBold.woff") format("woff");
 }
 
 
