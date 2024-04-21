@@ -1,15 +1,16 @@
+import { useState, useEffect } from "react";
+
 import blackLogo from "../assets/Black-Logo.png";
 import whiteLogo from "../assets/White-Logo.png";
-
-import { useState, useEffect } from "react";
+import "../index.css"
 
 const Header = ({ scrollStatus }) => {
   const [headerStatus, setHeaderStatus] = useState("");
 
   useEffect(() => {
-    if (scrollStatus === 50 || scrollStatus === 100 || scrollStatus === 0) {
+    if (scrollStatus % 50 === 0) {
       setHeaderStatus("white");
-    } else if (scrollStatus === 25 || scrollStatus === 75) {
+    } else if (scrollStatus % 50 === 25) {
       setHeaderStatus("black");
     }
   }, [scrollStatus]);
@@ -23,39 +24,39 @@ const Header = ({ scrollStatus }) => {
       <nav
         className={`${
           headerStatus === "white" ? "border-white" : "border-black"
-        } h-full w-full flex items-center justify-around border-b-4 p-5`}
+        } h-full w-full flex items-center justify-evenly border-b-4 p-5`}
       >
-        <a href="#AboutUs" className="navbar-hover">
+        <a href="#AboutUs">
           <span
-            className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}
+            className={`text-${headerStatus} text-[.9rem] font-semibold`}
           >
             About Us
           </span>
         </a>
-        <a href="#OurStand" className="navbar-hover">
+        <a href="#OurStand">
           <span
-            className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}
+            className={`text-${headerStatus} text-[.9rem] font-semibold`}
           >
             Our Stand
           </span>
         </a>
         <div></div>
-        <a href="#OurTeam" className="navbar-hover">
+        <a href="#OurTeam">
           <span
-            className={`text-${headerStatus} font-Arial text-[.9rem] font-semibold`}
+            className={`text-${headerStatus} text-[.9rem] font-semibold`}
           >
             Our Team
           </span>
         </a>
-        <a href="#Sponsors" className="navbar-hover">
+        <a href="#Sponsors">
           <span
-            className={`text-${headerStatus}  font-Arial text-[.9rem] font-semibold`}
+            className={`text-${headerStatus} text-[.9rem] font-semibold`}
           >
             Sponsors
           </span>
         </a>
       </nav>
-      <div className="relative flex h-2 w-full flex-col items-center">
+      <div className="relative flex h-2 w-full flex-col items-center z-50">
         <div className="mt-[-5em]">
           <a href="#Home">
             {headerStatus === "black" ? (

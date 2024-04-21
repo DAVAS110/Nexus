@@ -24,29 +24,23 @@
     url("./assets/font/Saira-SemiBold.woff") format("woff");
 }
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
 
 Canvas {
   height: 100vh !important;
 }
 
-/*NavBar Hover*/
-.navbar-hover::after, .navbar-hover::before {
-  content: '';
-  width: 0%;
-  height: 6px;
-  display: block;
-  transition: 0.5s;
+body { 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: black white;
 }
 
-.navbar-hover::before {
-  background: #8C1E1D;
-  margin-left: auto;
-}
-
-.navbar-hover::after {
-  background: #004216;
-}
-
-.navbar-hover:hover::after, .navbar-hover:hover::before {
-  width: 100%;
-}
