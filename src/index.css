@@ -33,6 +33,13 @@
   }
 }
 
+@layer components{
+  .contenedor {
+      @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+}
+
+
 Canvas {
   height: 100vh !important;
 }

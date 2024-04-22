@@ -36,7 +36,7 @@ const Team = () => {
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <div className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <div className="h-[25em] w-[3em] bg-black m-auto"></div>
+            <div className="h-[25em] w-[2em] bg-black m-auto"></div>
           </div>
         </div>
         {/*    <!-- Controls --> */}

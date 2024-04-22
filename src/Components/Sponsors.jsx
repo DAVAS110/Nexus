@@ -1,10 +1,10 @@
 
-import ExtremeTech from "../../assets/Logos-Sponsors/Logo-extremeTech.webp";
-import Servicentro from "../../assets/Logos-Sponsors/Logo-servicentro.webp";
-import Mission from "../../assets/Logos-Sponsors/Logo-mission.webp";
-import Rabsa from "../../assets/Logos-Sponsors/Logo-rabsa.webp";
-import Ricsa from "../../assets/Logos-Sponsors//Logo-ricsa.webp";
-import UCA from "../../assets/Logos-Sponsors/Logo-uca.webp";
+import ExtremeTech from "../assets/Logos-Sponsors/Logo-extremeTech.webp";
+import Servicentro from "../assets/Logos-Sponsors/Logo-servicentro.webp";
+import Mission from "../assets/Logos-Sponsors/Logo-mission.webp";
+import Rabsa from "../assets/Logos-Sponsors/Logo-rabsa.webp";
+import Ricsa from "../assets/Logos-Sponsors//Logo-ricsa.webp";
+import UCA from "../assets/Logos-Sponsors/Logo-uca.webp";
 
 import Footer from "./Footer.jsx";
 

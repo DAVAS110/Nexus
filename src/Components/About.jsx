@@ -1,4 +1,4 @@
-import f1Car2 from "../../assets/f1Car(2).png";
+import f1Car2 from "../assets/f1Car(2).png";
 
 const About = () => {
   return (

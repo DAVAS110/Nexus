@@ -25,6 +25,9 @@ export default {
         Tiro: ["Tiro Bangla Italic", "sans-serif"],
         SairaBold: ["Saira-SemiBold", "sans-serif"],
       },
+      transitionProperty: {
+        'height': 'height'
+      },
     },
   },
   plugins: [],

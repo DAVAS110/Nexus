@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
-import Standnexuscr from "../../../public/Standnexuscr.jsx";
+import Standnexuscr from "../../public/Standnexuscr.jsx";
 
 const Stand = () => {
   const rotation = [0.2, 0, 0];
