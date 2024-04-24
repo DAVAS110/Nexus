@@ -1,15 +1,24 @@
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import Standnexuscr from "../../public/Standnexuscr.jsx";
 
 const Stand = () => {
-  const rotation = [0.2, 0, 0];
+  const width = screen.width;
+  const rotation = [0.1, -0.4, 0];
+  const position = [0, -0.3, 0];
+  const scale = 0.4;
+
+  useEffect(() => {
+    if (width <= 1366) {
+      console.log("test")
+    }
+  }, [width]);
 
   return (
     <section
-      className="snap-start h-[calc(100vh-90px)] w-screen flex items-center justify-around bg-black"
+      className="snap-start h-[calc(100vh-90px)] w-screen flex flex-col lg:flex-row items-center justify-around bg-black"
       id="OurStand"
     >
       <div className="h-full w-screen flex items-start justify-center flex-col p-10 gap-5 max-w-[500px]">
@@ -23,21 +32,21 @@ const Stand = () => {
         </p>
       </div>
       <div className="h-full w-[90vh] flex items-center justify-center">
-        <Canvas>
-          <ambientLight />
+        <Canvas className="cursor-grabbing">
+          <hemisphereLight />
           <OrbitControls
-            autoRotate={false}
             enableZoom={true}
+            autoRotateSpeed={6}
             enablePan={false}
             dampingFactor={1}
             target={[0, 0, 0]}
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 3}
           />
-          <Suspense fallback={null}>
+          <Suspense>
             <Standnexuscr
-              position={[0, 0, 0]}
-              scale={2}
+              position={position}
+              scale={scale}
               rotation={rotation}
             />
           </Suspense>

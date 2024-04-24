@@ -7,10 +7,10 @@ const Home = () => {
       id="Home"
     >
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-white text-[7em] font-SairaBold tracking-widest">
+        <h1 className="text-white text-[5.2em] lg:text-[7em] font-SairaBold tracking-widest">
           NEXUS
         </h1>
-        <img src={f1Car} alt="" className="mt-[-4em]" />
+      <img src={f1Car} alt="" className="w-full h-[6em] lg:w-full lg:h-full mt-[-3em] lg:mt-[-4em]" />
       </div>
     </section>
   );

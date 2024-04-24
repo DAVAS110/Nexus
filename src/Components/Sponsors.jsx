@@ -1,3 +1,4 @@
+import Footer from "./Footer.jsx";
 
 import ExtremeTech from "../assets/Logos-Sponsors/Logo-extremeTech.webp";
 import Servicentro from "../assets/Logos-Sponsors/Logo-servicentro.webp";
@@ -6,7 +7,14 @@ import Rabsa from "../assets/Logos-Sponsors/Logo-rabsa.webp";
 import Ricsa from "../assets/Logos-Sponsors//Logo-ricsa.webp";
 import UCA from "../assets/Logos-Sponsors/Logo-uca.webp";
 
-import Footer from "./Footer.jsx";
+const logos = {
+  ExtremeTech: ExtremeTech,
+  Servicentro: Servicentro,
+  Mission: Mission,
+  Rabsa: Rabsa,
+  Ricsa: Ricsa,
+  UCA: UCA,
+};
 
 const Sponsors = () => {
   return (
@@ -18,55 +26,20 @@ const Sponsors = () => {
         Sponsors
       </h1>
       <div className="flex justify-center flex-col items-center">
-        <div className="grid grid-cols-3 gap-4 content-center group">
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={Servicentro} alt="" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={ExtremeTech} alt="" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={Mission} alt="" className="h-[8em]" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={Rabsa} alt="" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={UCA} alt="" className="h-[7em]" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          >
-            <img src={Ricsa} alt="" className="h-[7em]" />
-          </a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          ></a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          ></a>
-          <a
-            href="#"
-            className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
-          ></a>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 content-center group">
+          {Object.entries(logos).map(([name, src]) => (
+            <a
+              href="#"
+              key={name}
+              className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
+            >
+              <img
+                src={src}
+                alt={name}
+                className="h-full w-full"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <Footer />

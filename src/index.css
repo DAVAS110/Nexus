@@ -9,14 +9,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Tiro Bangla Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Tiro Bangla Italic"),
-    url("./assets/font/TiroBangla-Italic.woff") format("woff");
-}
-
-@font-face {
   font-family: "Saira-SemiBold";
   font-style: normal;
   font-weight: normal;
