@@ -19,7 +19,7 @@ const Team = () => {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      autoplay: 3000,
+      autoplay: 4000,
       animationDuration: 700,
       gap: 10,
       classNames: {
@@ -82,7 +82,7 @@ const Team = () => {
                 <div className="flex justify-between items-center h-full mx-2">
                   <img src={FlagCr} alt="" />
                   <span className="flex gap-2">
-                    <a href={socialMedia[0]}>
+                    <a href={socialMedia[0]} >
                       <FaXTwitter color="white" />
                     </a>
                     <a href={socialMedia[1]}>

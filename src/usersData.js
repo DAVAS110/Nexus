@@ -21,7 +21,7 @@ export const users = [
     roles: ["Team Manager", "Project Manager"],
     socialMedia: [
       "https://www.instagram.com/celesgamb29?igsh=MTlwYzF5dzhlZmpwZw==",
-      "",
+      "#",
     ],
   },
   {

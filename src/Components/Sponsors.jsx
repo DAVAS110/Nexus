@@ -5,7 +5,7 @@ import Servicentro from "../assets/Logos-Sponsors/Logo-servicentro.webp";
 import Mission from "../assets/Logos-Sponsors/Logo-mission.webp";
 import Rabsa from "../assets/Logos-Sponsors/Logo-rabsa.webp";
 import Ricsa from "../assets/Logos-Sponsors//Logo-ricsa.webp";
-import UCA from "../assets/Logos-Sponsors/Logo-uca.webp";
+import UCA from "../assets/Logos-Sponsors/Logo-UCA.webp";
 
 const logos = {
   ExtremeTech: ExtremeTech,
@@ -31,12 +31,11 @@ const Sponsors = () => {
             <a
               href="#"
               key={name}
-              className="flex h-24 w-[13em] items-center justify-center overflow-hidden bg-white/30 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
+              className="flex h-24 w-[10em] lg:w-[13em] items-center justify-center overflow-hidden bg-white duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400"
             >
               <img
                 src={src}
                 alt={name}
-                className="h-full w-full"
               />
             </a>
           ))}

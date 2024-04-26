@@ -1,20 +1,13 @@
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import Standnexuscr from "../../public/Standnexuscr.jsx";
 
 const Stand = () => {
-  const width = screen.width;
-  const rotation = [0.1, -0.4, 0];
-  const position = [0, -0.3, 0];
+  const rotation = [0, 0, 0];
+  const position = [0, -0.8, 0];
   const scale = 0.4;
-
-  useEffect(() => {
-    if (width <= 1366) {
-      console.log("test")
-    }
-  }, [width]);
 
   return (
     <section
@@ -31,12 +24,12 @@ const Stand = () => {
           innovación en F1 in Schools!
         </p>
       </div>
-      <div className="h-full w-[90vh] flex items-center justify-center">
+      <div className="flex h-[25em] w-[90vh] lg:h-full items-center justify-center">
         <Canvas className="cursor-grabbing">
           <hemisphereLight />
           <OrbitControls
             enableZoom={true}
-            autoRotateSpeed={6}
+            autoRotateSpeed={10}
             enablePan={false}
             dampingFactor={1}
             target={[0, 0, 0]}
