@@ -1,5 +1,5 @@
 import f1Car from "../assets/f1Car.png";
-import { OnRevealWhite } from "../components/OnRevealWhite";
+import { OnRevealWhite } from "./OnRevealWhite";
 
 const Home = () => {
   return (

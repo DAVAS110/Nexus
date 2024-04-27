@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import Header from "../../components/Header.jsx";
+import Header from "../../Components/Header.jsx";
 
-import Home from "../../components/Home.jsx";
-import Team from "../../components/Team.jsx";
-import About from "../../components/About.jsx";
-import Stand from "../../components/Stand.jsx";
-import Sponsors from "../../components/Sponsors.jsx";
+import Home from "../../Components/Home.jsx";
+import Team from "../../Components/Team.jsx";
+import About from "../../Components/About.jsx";
+import Stand from "../../Components/Stand.jsx";
+import Sponsors from "../../Components/Sponsors.jsx";
 
 const HomePage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
