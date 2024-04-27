@@ -16,6 +16,10 @@ const Header = ({ scrollStatus }) => {
     }
   }, [scrollStatus]);
 
+  const handleNavLinkClick = () => {
+    setIsOpen(false); // Establecer isOpen en false cuando se hace clic en un enlace del menú
+  };
+
   return (
     <header
       className={`${isOpen ? 'h-full' : 'h-[90px]'} border-b-[6px] ${
@@ -41,7 +45,7 @@ const Header = ({ scrollStatus }) => {
           }`}
         >
           <li>
-            <a href="#AboutUs">
+            <a href="#AboutUs" onClick={handleNavLinkClick}>
               <span
                 className={`text-${headerStatus} text-xl lg:text-[.9rem] font-semibold`}
               >
@@ -50,7 +54,7 @@ const Header = ({ scrollStatus }) => {
             </a>
           </li>
           <li>
-            <a href="#OurStand">
+            <a href="#OurStand" onClick={handleNavLinkClick}>
               <span
                 className={`text-${headerStatus} text-xl lg:text-[.9rem] font-semibold`}
               >
@@ -59,7 +63,7 @@ const Header = ({ scrollStatus }) => {
             </a>
           </li>
           <li>
-            <a href="#OurTeam">
+            <a href="#OurTeam" onClick={handleNavLinkClick}>
               <span
                 className={`text-${headerStatus} text-xl lg:text-[.9rem]  font-semibold`}
               >
@@ -68,7 +72,7 @@ const Header = ({ scrollStatus }) => {
             </a>
           </li>
           <li>
-            <a href="#Sponsors">
+            <a href="#Sponsors" onClick={handleNavLinkClick}>
               <span
                 className={`text-${headerStatus} text-xl lg:text-[.9rem] font-semibold`}
               >

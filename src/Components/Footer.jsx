@@ -14,7 +14,7 @@ const Footer = () => {
         <nav className="">
           <ul className="flex gap-[1em] text-white lg:text-lg text-2xl">
             <li>
-              <a href="#">
+              <a href=" https://www.instagram.com/nexusracing_cr?igsh=MTB1ZDA5aDBoc3R6eg==">
                 <FaInstagram />
               </a>
             </li>
@@ -24,12 +24,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://youtube.com/@NexusRacing_cr?si=ng3AQQ4X4d-5j7uO">
                 <FaYoutube />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://x.com/Nexus_Racingcr?t=B8J_wEvgZyzdfQQmMUHkOg&s=09">
                 <BsTwitterX />
               </a>
             </li>

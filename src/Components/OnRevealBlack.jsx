@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
-export const Reveal = ({ children, width = "fit-content" }) => {
+export const OnRevealBlack = ({ children, width = "fit-content" }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -43,7 +43,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
           bottom: 4,
           left: 0,
           right: 0,
-          background: "#CC0000",
+          background: "#000",
           zIndex: 20,
         }}
       />

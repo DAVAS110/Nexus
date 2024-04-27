@@ -19,8 +19,8 @@ const Team = () => {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      autoplay: 4000,
-      animationDuration: 700,
+      autoplay: 2000,
+      animationDuration: 500,
       gap: 10,
       classNames: {
         nav: {
@@ -50,7 +50,6 @@ const Team = () => {
       id="OurTeam"
     >
       <div className="glide-03 relative w-[59em]">
-        {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <div className="whitespace-no-wrap flex-no-wrap relative flex items-center justify-evenly overflow-hidden p-0 z-40">
             {users.map(({ id, name, lastName, img, roles, socialMedia }) => (
@@ -59,33 +58,33 @@ const Team = () => {
                 key={id}
               >
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={Logo_F1inSchoolcr} alt="" />
-                  <img src={Logo_NexusWhite} alt="" />
+                  <img src={Logo_F1inSchoolcr} alt="F1 IN SCHOOLS Costa Rica" />
+                  <img src={Logo_NexusWhite} alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit" />
                 </div>
-                <img src={NeonRedBar} alt="" />
+                <img src={NeonRedBar} alt="Bar" />
                 <div className="flex flex-col items-center justify-center gap-2 my-4">
-                  <img src={img} className="h-[9em]" alt="" />
-                  <img src={name} className="h-[1em]" alt="" />
+                  <img src={img} className="h-[9em]" alt={lastName} />
+                  <img src={name} className="h-[1em]" alt={lastName} />
                   <p className="text-white text-sm">{lastName}</p>
                   <div className="flex flex-col items-center justify-center w-full h-full gap-1">
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseBlue} alt="" className="h-[1em]" />
+                      <img src={ElipseBlue} alt="Elipse" className="h-[1em]" />
                       {roles[0]}
                     </span>
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseRed} alt="" className="h-[1em]" />
+                      <img src={ElipseRed} alt="Elipse" className="h-[1em]" />
                       {roles[1]}
                     </span>
                   </div>
                 </div>
-                <img src={NeonBlueBar} alt="" />
+                <img src={NeonBlueBar} alt="Bar" />
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={FlagCr} alt="" />
+                  <img src={FlagCr} alt="Flag Bandera Costa Rica" />
                   <span className="flex gap-2">
-                    <a href={socialMedia[0]} >
+                    <a href={socialMedia[0]} target="_blank">
                       <FaXTwitter color="white" />
                     </a>
-                    <a href={socialMedia[1]}>
+                    <a href={socialMedia[1]} target="_blank">
                       <FaInstagram color="white" />
                     </a>
                   </span>
@@ -94,7 +93,6 @@ const Team = () => {
             ))}
           </div>
         </div>  
-        {/*    <!-- Controls --> */}
         <div
           className="absolute left-0 top-1/2 flex h-0 w-full items-center justify-between px-4 z-50"
           data-glide-el="controls"
