@@ -86,9 +86,9 @@ const Header = ({ scrollStatus }) => {
         <div className="mt-[-5em]">
           <a href="#Home">
             {headerStatus === 'black' ? (
-              <img src={blackLogo} className="h-[9em] w-full" alt="" />
+              <img src={blackLogo} className="w-[9em] lg:h-[9em] lg:w-full" alt="" />
             ) : (
-              <img src={whiteLogo} className="h-[9em] w-full" alt="" />
+              <img src={whiteLogo} className="w-[9em] lg:h-[9em] lg:w-full" alt="" />
             )}
           </a>
         </div>

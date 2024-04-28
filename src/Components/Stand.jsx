@@ -9,7 +9,7 @@ import { OnRevealWhite } from "./OnRevealWhite.jsx";
 const Stand = () => {
   const getScreenWidth = screen.width;
 
-  const scale = 0.4;
+  let scale = 0.4;
 
   let rotation = [0, 0, 0];
   let position = [0, -0.8, 0];
@@ -17,9 +17,10 @@ const Stand = () => {
   let enableZoom = true;
 
   if (getScreenWidth < 1024) {
-     rotation = [0.15, 0, 0];
-     position = [0, 0.7, 0];
-     enableZoom = false;
+    rotation = [0.3, 0, 0];
+    position = [0, 1.5, 0];
+    enableZoom = false;
+    scale = 0.3;
   }
 
   return (
@@ -34,10 +35,9 @@ const Stand = () => {
           </h1>
         </OnRevealWhite>
         <OnRevealWhite>
-          <p className="text-justify max-w-[500px] text-white text-xl">
-            Únete a nosotros mientras llevamos la pasión por la Fórmula 1 a una
-            nueva dimensión. ¡Descubre cómo Nexus redefine la velocidad y la
-            innovación en F1 in Schools!
+          <p className="text-justify max-w-[500px] text-white text-">
+            Join us as we take the passion for Formula 1 to a new dimension.
+            Discover how Nexus redefines speed and innovation in F1 in Schools!
           </p>
         </OnRevealWhite>
       </div>

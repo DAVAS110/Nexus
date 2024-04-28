@@ -3,11 +3,11 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col w-screen justify-center gap-10">
+    <footer className="flex flex-col w-screen justify-center gap-4 lg:gap-10">
       <hr />
-      <div className="flex flex-col lg:flex-row justify-around items-center gap-8 lg:gap-0">
+      <div className="flex flex-col-reverse lg:flex-row justify-around items-center gap-2 lg:gap-8">
         <div className="flex items-center justify-center">
-          <span className="text-white text-center lg:text-justify">
+          <span className="text-white text-center text-xs lg:text-justify lg:text-base">
             © CopyrightNexusRacing 2024 | Todos los derechos reservados
           </span>
         </div>

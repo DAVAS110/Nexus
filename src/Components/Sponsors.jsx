@@ -5,7 +5,7 @@ import { OnRevealWhite } from "./OnRevealWhite.jsx";
 const Sponsors = () => {
   return (
     <section
-      className="snap-start h-[calc(100vh-90px)] w-screen bg-black flex flex-col justify-evenly items-center"
+      className="snap-start h-[calc(100vh-90px)] w-screen bg-black flex flex-col lg: justify-evenly items-center"
       id="Sponsors"
     >
       <OnRevealWhite>

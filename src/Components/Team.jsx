@@ -11,7 +11,7 @@ import NeonRedBar from "../assets/Team-Cards/NeonRedBar.webp";
 import ElipseRed from "../assets/Team-Cards/EllipseRed.webp";
 import FlagCr from "../assets/Team-Cards/FlagCr.webp";
 
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const Team = () => {
   useEffect(() => {
@@ -81,10 +81,7 @@ const Team = () => {
                 <div className="flex justify-between items-center h-full mx-2">
                   <img src={FlagCr} alt="Flag Bandera Costa Rica" />
                   <span className="flex gap-2">
-                    <a href={socialMedia[0]} target="_blank">
-                      <FaXTwitter color="white" />
-                    </a>
-                    <a href={socialMedia[1]} target="_blank">
+                    <a href={socialMedia} target="_blank">
                       <FaInstagram color="white" />
                     </a>
                   </span>

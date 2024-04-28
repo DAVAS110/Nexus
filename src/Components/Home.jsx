@@ -14,7 +14,7 @@ const Home = () => {
           <img
             src={f1Car}
             alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit"
-            className="w-full h-[6em] lg:w-full lg:h-full mt-[-3em] lg:mt-[-4em] z-40"
+            className="w-full h-[6em] lg:h-full mt-[-3em] lg:mt-[-4em] z-40"
           />
       </div>
     </section>

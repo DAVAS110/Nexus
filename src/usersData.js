@@ -19,10 +19,8 @@ export const users = [
     lastName: "Gamboa Brenes",
     img: Image_Gamboa,
     roles: ["Team Manager", "Project Manager"],
-    socialMedia: [
+    socialMedia:
       "https://www.instagram.com/celesgamb29?igsh=MTlwYzF5dzhlZmpwZw==",
-      "#",
-    ],
   },
   {
     id: 2,
@@ -30,10 +28,7 @@ export const users = [
     lastName: "Bolaños Mena",
     img: Image_Kevin,
     roles: ["Manufacturing Engineer"],
-    socialMedia: [
-      "https://www.instagram.com/_kbm.04?igsh=MXBsNXE3dWR3czdvbQ==",
-      "https://x.com/kevinbm_?s=21",
-    ],
+    socialMedia: "https://www.instagram.com/_kbm.04?igsh=MXBsNXE3dWR3czdvbQ==",
   },
   {
     id: 3,
@@ -41,7 +36,7 @@ export const users = [
     lastName: "Villalta Barrantes",
     img: Image_Nicole,
     roles: ["Graphic Designer", "Marketing Manager"],
-    socialMedia: ["", ""],
+    socialMedia: "https://www.instagram.com/_nic_vb?igsh=MWRnMGpsM3g2MHZk",
   },
   {
     id: 4,
@@ -49,7 +44,8 @@ export const users = [
     lastName: "Vargas Arias",
     img: Image_David,
     roles: ["Sponsorship", "Finance Manager"],
-    socialMedia: ["", ""],
+    socialMedia:
+      "https://www.instagram.com/davdstfu?igsh=YTY0MTQxdWxpbHI2&utm_source=qr",
   },
   {
     id: 5,
@@ -57,7 +53,7 @@ export const users = [
     lastName: "Soto Martinez",
     img: Image_Hilary,
     roles: ["Partnerships Manager", "Social Media Manager"],
-    socialMedia: ["", ""],
+    socialMedia: "https://www.instagram.com/adoette_404?igsh=dHlweDNkd242b3pn",
   },
   {
     id: 6,
@@ -65,6 +61,6 @@ export const users = [
     lastName: "Alvarado Garro",
     img: Image_Joshua,
     roles: ["Design Engineer", "Resources Manager"],
-    socialMedia: ["", ""],
+    socialMedia: "https://www.instagram.com/joshua_ag8?igsh=ejNwcm9xZ2lwN2F0",
   },
 ];
