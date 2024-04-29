@@ -1,27 +1,23 @@
-import { Suspense } from "react";
-
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
-import Standnexuscr from "../../public/Standnexuscr.jsx";
-
 import { OnRevealWhite } from "./OnRevealWhite.jsx";
+import StandCanvas from "./canvas/Stand.jsx";
+import { motion } from "framer-motion";
 
 const Stand = () => {
-  const getScreenWidth = screen.width;
+  //const getScreenWidth = screen.width;
 
-  let scale = 0.4;
+  // let scale = 0.4;
 
-  let rotation = [0, 0, 0];
-  let position = [0, -0.8, 0];
-  let autoRotate = false;
-  let enableZoom = true;
+  // let rotation = [0, 0, 0];
+  // let position = [0, -0.8, 0];
+  // let autoRotate = false;
+  // let enableZoom = true;
 
-  if (getScreenWidth < 1024) {
-    rotation = [0.3, 0, 0];
-    position = [0, 1.5, 0];
-    enableZoom = false;
-    scale = 0.3;
-  }
+  // if (getScreenWidth < 1024) {
+  //   rotation = [0.3, 0, 0];
+  //   position = [0, 1.5, 0];
+  //   enableZoom = false;
+  //   scale = 0.3;
+  // }
 
   return (
     <section
@@ -42,26 +38,7 @@ const Stand = () => {
         </OnRevealWhite>
       </div>
       <div className="flex h-[25em] w-full lg:w-[90vh] lg:h-full items-center justify-center">
-        <Canvas className="cursor-grabbing">
-          <hemisphereLight />
-          <OrbitControls
-            enableZoom={enableZoom}
-            autoRotate={autoRotate}
-            autoRotateSpeed={10}
-            enablePan={true}
-            dampingFactor={1}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 3}
-          />
-          <Suspense>
-            <Standnexuscr
-              position={position}
-              scale={scale}
-              rotation={rotation}
-            />
-          </Suspense>
-          <Environment preset="city" />
-        </Canvas>
+        <StandCanvas />
       </div>
     </section>
   );
