@@ -1,4 +1,4 @@
-import f1Car from "../assets/f1Car.png";
+import f1Car from "../assets/f1Car.webp";
 import { OnRevealWhite } from "./OnRevealWhite";
 
 const Home = () => {

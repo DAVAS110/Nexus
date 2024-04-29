@@ -50,7 +50,6 @@ const Stand = () => {
             autoRotateSpeed={10}
             enablePan={true}
             dampingFactor={1}
-            target={[0, 0, 0]}
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 3}
           />
