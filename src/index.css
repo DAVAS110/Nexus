@@ -1,7 +1,13 @@
-* {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 @tailwind base;
@@ -25,20 +31,19 @@
   }
 }
 
-@layer components{
+@layer components {
   .contenedor {
-      @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
   }
 }
 
-Canvas {
+canvas {
   height: 100vh !important;
 }
 
-body { 
-  overflow-y: hidden;
-  overflow-x: hidden;
+/* Body */
+body {
+  overflow: hidden;
   scrollbar-width: thin;
   scrollbar-color: black white;
 }
-

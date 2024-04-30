@@ -58,28 +58,28 @@ const Team = () => {
                 key={id}
               >
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={Logo_F1inSchoolcr} alt="F1 IN SCHOOLS Costa Rica" />
-                  <img src={Logo_NexusWhite} alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit" />
+                  <img src={Logo_F1inSchoolcr} alt="F1 IN SCHOOLS Costa Rica" loading="lazy"/>
+                  <img src={Logo_NexusWhite} alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit" loading="lazy"/>
                 </div>
-                <img src={NeonRedBar} alt="Bar" />
+                <img src={NeonRedBar} alt="Bar" loading="lazy" />
                 <div className="flex flex-col items-center justify-center gap-2 my-4">
-                  <img src={img} className="h-[9em]" alt={lastName} />
-                  <img src={name} className="h-[1em]" alt={lastName} />
+                  <img src={img} className="h-[9em]" alt={lastName} loading="lazy" />
+                  <img src={name} className="h-[1em]" alt={lastName} loading="lazy"/>
                   <p className="text-white text-sm">{lastName}</p>
                   <div className="flex flex-col items-center justify-center w-full h-full gap-1">
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseBlue} alt="Elipse" className="h-[1em]" />
+                      <img src={ElipseBlue} alt="Elipse" className="h-[1em]" loading="lazy"/>
                       {roles[0]}
                     </span>
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseRed} alt="Elipse" className="h-[1em]" />
+                      <img src={ElipseRed} alt="Elipse" className="h-[1em]" loading="lazy"/>
                       {roles[1]}
                     </span>
                   </div>
                 </div>
-                <img src={NeonBlueBar} alt="Bar" />
+                <img src={NeonBlueBar} alt="Bar" loading="lazy" />
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={FlagCr} alt="Flag Bandera Costa Rica" />
+                  <img src={FlagCr} alt="Flag Bandera Costa Rica" loading="lazy"/>
                   <span className="flex gap-2">
                     <a href={socialMedia} target="_blank">
                       <FaInstagram color="white" />

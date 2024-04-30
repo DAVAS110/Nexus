@@ -17,7 +17,7 @@ const Header = ({ scrollStatus }) => {
   }, [scrollStatus]);
 
   const handleNavLinkClick = () => {
-    setIsOpen(false); // Establecer isOpen en false cuando se hace clic en un enlace del menú
+    setIsOpen(false);
   };
 
   return (
@@ -85,11 +85,12 @@ const Header = ({ scrollStatus }) => {
       <div className="relative flex h-2 w-full flex-col items-center z-50">
         <div className="mt-[-5em]">
           <a href="#Home">
-            {headerStatus === 'black' ? (
-              <img src={blackLogo} className="w-[9em] lg:h-[9em] lg:w-full" alt="" />
-            ) : (
-              <img src={whiteLogo} className="w-[9em] lg:h-[9em] lg:w-full" alt="" />
-            )}
+            <img
+              src={headerStatus === 'black' ? blackLogo : whiteLogo}
+              className="w-[9em] lg:h-[9em] lg:w-full"
+              alt="Logo"
+              loading="lazy" 
+            />
           </a>
         </div>
       </div>

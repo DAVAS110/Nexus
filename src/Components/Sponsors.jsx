@@ -22,7 +22,7 @@ const Sponsors = () => {
               target="_blank"
               className="flex h-24 w-[10em] lg:w-[13em] items-center justify-center overflow-hidden bg-white duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[1] hover!scale-400 hover:-translate-y-2"
             >
-              <img src={src} alt={alt} />
+              <img src={src} alt={alt} loading="lazy" />
             </a>
           ))}
         </div>

@@ -12,6 +12,7 @@ const About = () => {
           src={f1Car2}
           alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team"
           className="h-[10em] w-full lg:h-[20em] lg:w-[30em] z-50"
+          loading="lazy"
         />
       </div>
 

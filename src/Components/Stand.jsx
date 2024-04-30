@@ -1,24 +1,7 @@
 import { OnRevealWhite } from "./OnRevealWhite.jsx";
 import StandCanvas from "./canvas/Stand.jsx";
-import { motion } from "framer-motion";
 
 const Stand = () => {
-  //const getScreenWidth = screen.width;
-
-  // let scale = 0.4;
-
-  // let rotation = [0, 0, 0];
-  // let position = [0, -0.8, 0];
-  // let autoRotate = false;
-  // let enableZoom = true;
-
-  // if (getScreenWidth < 1024) {
-  //   rotation = [0.3, 0, 0];
-  //   position = [0, 1.5, 0];
-  //   enableZoom = false;
-  //   scale = 0.3;
-  // }
-
   return (
     <section
       className="snap-start h-[calc(100vh-90px)] w-screen flex flex-col lg:flex-row items-center justify-around bg-black"
