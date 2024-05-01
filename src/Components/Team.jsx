@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Glide from "@glidejs/glide";
 
-import {users} from '../usersData.js';
+import { users } from "../usersData.js";
 
 import Logo_F1inSchoolcr from "../assets/Team-Cards/F1inSchoolcr.webp";
 import Logo_NexusWhite from "../assets/Team-Cards/NexusWhite.webp";
@@ -42,8 +42,6 @@ const Team = () => {
     };
   }, []);
 
- 
-
   return (
     <section
       className="relative snap-start h-[calc(100vh-90px)] w-screen flex justify-center items-center bg-white"
@@ -58,28 +56,68 @@ const Team = () => {
                 key={id}
               >
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={Logo_F1inSchoolcr} alt="F1 IN SCHOOLS Costa Rica" loading="lazy"/>
-                  <img src={Logo_NexusWhite} alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit" loading="lazy"/>
+                  <img
+                    src={Logo_F1inSchoolcr}
+                    alt="F1 IN SCHOOLS Costa Rica"
+                    loading="lazy"
+                  />
+                  <img
+                    src={Logo_NexusWhite}
+                    alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit"
+                    loading="lazy"
+                  />
                 </div>
                 <img src={NeonRedBar} alt="Bar" loading="lazy" />
                 <div className="flex flex-col items-center justify-center gap-2 my-4">
-                  <img src={img} className="h-[9em]" alt={lastName} loading="lazy" />
-                  <img src={name} className="h-[1em]" alt={lastName} loading="lazy"/>
+                  <img
+                    src={img}
+                    className="h-[9em]"
+                    alt={lastName}
+                    loading="lazy"
+                  />
+                  <img
+                    src={name}
+                    className="h-[1em]"
+                    alt={lastName}
+                    loading="lazy"
+                  />
                   <p className="text-white text-sm">{lastName}</p>
                   <div className="flex flex-col items-center justify-center w-full h-full gap-1">
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseBlue} alt="Elipse" className="h-[1em]" loading="lazy"/>
+                      <img
+                        src={ElipseBlue}
+                        alt="Elipse"
+                        className="h-[1em]"
+                        loading="lazy"
+                      />
                       {roles[0]}
                     </span>
                     <span className="flex text-white text-xs items-center gap-1">
-                      <img src={ElipseRed} alt="Elipse" className="h-[1em]" loading="lazy"/>
-                      {roles[1]}
+                      {!roles[1] == "" ? (
+                        <>
+                          <img
+                            src={ElipseRed}
+                            alt="Elipse"
+                            className="h-[1em]"
+                            loading="lazy"
+                          />
+                          {roles[1]}
+                        </>
+                      ) : (
+                        <>
+                          
+                        </>
+                      )}
                     </span>
                   </div>
                 </div>
                 <img src={NeonBlueBar} alt="Bar" loading="lazy" />
                 <div className="flex justify-between items-center h-full mx-2">
-                  <img src={FlagCr} alt="Flag Bandera Costa Rica" loading="lazy"/>
+                  <img
+                    src={FlagCr}
+                    alt="Flag Bandera Costa Rica"
+                    loading="lazy"
+                  />
                   <span className="flex gap-2">
                     <a href={socialMedia} target="_blank">
                       <FaInstagram color="white" />
@@ -89,7 +127,7 @@ const Team = () => {
               </div>
             ))}
           </div>
-        </div>  
+        </div>
         <div
           className="absolute left-0 top-1/2 flex h-0 w-full items-center justify-between px-4 z-50"
           data-glide-el="controls"

@@ -87,7 +87,7 @@ const Header = ({ scrollStatus }) => {
           <a href="#Home">
             <img
               src={headerStatus === 'black' ? blackLogo : whiteLogo}
-              className="w-[9em] lg:h-[9em] lg:w-full"
+              className="w-[9em] h-[9em]"
               alt="Logo"
               loading="lazy" 
             />

@@ -10,18 +10,29 @@ html {
   box-sizing: inherit;
 }
 
+/* Importación de Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Definición de fuentes */
 @font-face {
   font-family: "Saira-SemiBold";
   font-style: normal;
   font-weight: normal;
   src: local("Saira-SemiBold"),
-    url("./assets/font/Saira-SemiBold.woff") format("woff");
+    url("./assets/font/Saira-SemiBold.woff2") format("woff2"), /* Cambiado a woff2, que es más moderno y eficiente */
+    url("./assets/font/Saira-SemiBold.woff") format("woff"); /* Agregado soporte para woff para navegadores más antiguos */
 }
 
+/* Estilos para contenedor */
+@layer components {
+  .contenedor {
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+}
+
+/* Estilos para animación */
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -29,6 +40,13 @@ html {
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+}
+
+/* Estilos para el cuerpo */
+body {
+  overflow: hidden; /* Si necesitas ocultar el desplazamiento en el cuerpo, de lo contrario, considera si realmente es necesario */
+  scrollbar-width: thin; /* Ancho del scrollbar */
+  scrollbar-color: black white; /* Color del scrollbar */
 }
 
 @layer components {

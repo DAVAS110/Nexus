@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import { useEffect, useRef, useCallback } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export const OnRevealBlack = ({ children, width = "fit-content" }) => {
   const ref = useRef(null);
@@ -8,13 +8,15 @@ export const OnRevealBlack = ({ children, width = "fit-content" }) => {
   const mainControls = useAnimation();
   const slidecontrols = useAnimation();
 
+  const startMainAnimation = useCallback(() => mainControls.start("visible"), [mainControls]);
+  const startSlideAnimation = useCallback(() => slidecontrols.start("visible"), [slidecontrols]);
+
   useEffect(() => {
-    if(isInView){
-      mainControls.start("visible");
-      slidecontrols.start("visible")
+    if (isInView) {
+      startMainAnimation();
+      startSlideAnimation();
     }
-  }, [isInView])
-  
+  }, [isInView, startMainAnimation, startSlideAnimation]);
 
   return (
     <div ref={ref} style={{position: "relative", width, overflow: "hidden"}}>
