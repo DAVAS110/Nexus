@@ -9,9 +9,9 @@ const Stand = () => {
     >
       <div className="h-full w-screen flex items-start justify-center flex-col p-10 gap-5 max-w-[500px]">
         <OnRevealWhite>
-          <h1 className="text-6xl font-SairaBold text-white text-start">
+          <h2 className="text-6xl font-SairaBold text-white text-start">
             Our Stand
-          </h1>
+          </h2>
         </OnRevealWhite>
         <OnRevealWhite>
           <p className="text-justify max-w-[500px] text-white text-">

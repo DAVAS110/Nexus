@@ -22,9 +22,9 @@ const About = () => {
 
       <div className="h-full w-screen flex items-center lg:items-start justify-center flex-col px-10 pt-10 lg:p-10 lg:pb-2 gap-5">
         <OnRevealBlack>
-          <h1 className="text-justify max-w-[500px] text-5xl lg:text-6xl font-SairaBold z-50">
+          <h2 className="text-justify max-w-[500px] text-5xl lg:text-6xl font-SairaBold z-50">
             Get to Know Us More
-          </h1>
+          </h2>
         </OnRevealBlack>
         <OnRevealBlack>
           <p className="text-justify max-w-[500px] text-base lg:text-lg z-50">

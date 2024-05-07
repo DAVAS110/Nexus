@@ -9,9 +9,9 @@ const Sponsors = () => {
       id="Sponsors"
     >
       <OnRevealWhite>
-        <h1 className="text-5xl text-white text-center font-SairaBold">
+        <h2 className="text-5xl text-white text-center font-SairaBold">
           Sponsors
-        </h1>
+        </h2>
       </OnRevealWhite>
       <div className="flex justify-center flex-col items-center">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 content-center group">
