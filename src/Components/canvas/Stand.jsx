@@ -6,7 +6,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Stand = ({ isMobile }) => {
-  const stand = useGLTF("./standnexuscr.gltf");
+  const stand = useGLTF("./NexusStand3dWebsite.gltf");
 
   return (
     <mesh>
