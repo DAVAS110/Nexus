@@ -20,7 +20,7 @@ const Car = ({ isMobile }) => {
       <primitive
         object={stand.scene}
         scale={isMobile ? 0.5 : 0.7} // BEGIN: Adjust scale for small screens
-        position={isMobile ? [0, 0, 0] : [-3, 4, 0]}
+        position={isMobile ? [-2, 8.8, 0] : [-3, 4, 0]}
         rotation={[0.45, -1, 0.02]}
       />
     </mesh>
