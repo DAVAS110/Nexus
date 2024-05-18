@@ -1,5 +1,7 @@
 import f1Car2 from "../assets/f1Car(2).webp";
 import { OnRevealBlack } from "./OnRevealBlack";
+import CarCanvas from "./canvas/Car.jsx";
+
 
 const About = () => {
   return (
@@ -7,13 +9,14 @@ const About = () => {
       className="relative snap-start h-[calc(100vh-90px)] w-screen flex justify-around bg-white lg:items-center flex-col-reverse lg:flex-row"
       id="AboutUs"
     >
-      <div className="h-full w-screen flex items-center justify-center">
-        <img
+      <div className="flex h-[25em] w-full lg:w-[90vh] lg:h-full items-center justify-center z-50">
+        {/* <img
           src={f1Car2}
           alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team"
           className="h-[10em] w-full lg:h-[20em] lg:w-[30em] z-50"
           loading="lazy"
-        />
+        /> */}
+        <CarCanvas/>
       </div>
 
       <div className="absolute top-24 left-2 w-32 h-32 lg:w-64 lg:h-64 bg-[#0072bb] rounded-full opacity-85 lg:opacity-70 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000 z-0"></div>
@@ -34,6 +37,7 @@ const About = () => {
             uniting past and present. Join us in our relentless pursuit of
             excellence.
           </p>
+          <p className="font-bold">Press and hold to interact with the 3D model.</p>
         </OnRevealBlack>
       </div>
     </section>

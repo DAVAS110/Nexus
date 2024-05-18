@@ -34,8 +34,8 @@ const Team = () => {
         640: {
           perView: 3,
         },
-      },
-    }).mount();
+      },  
+    }).mount();   
 
     return () => {
       slider.destroy();

@@ -14,10 +14,11 @@ const Stand = () => {
           </h2>
         </OnRevealWhite>
         <OnRevealWhite>
-          <p className="text-justify max-w-[500px] text-white text-">
+          <p className="text-justify max-w-[500px] text-white text-base lg:text-lg">
             Join us as we take the passion for Formula 1 to a new dimension.
             Discover how Nexus redefines speed and innovation in F1 in Schools!
           </p>
+          <p className="font-bold text-white">Press and hold to interact with the 3D model.</p>
         </OnRevealWhite>
       </div>
       <div className="flex h-[25em] w-full lg:w-[90vh] lg:h-full items-center justify-center">
