@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import blackLogo from '../assets/Black-Logo.png';
-import whiteLogo from '../assets/White-Logo.png';
+import blackLogo from '../assets/Black-Logo.webp';
+import whiteLogo from '../assets/White-Logo.webp';
 import { HiOutlineXMark, HiOutlineBars3BottomRight } from 'react-icons/hi2';
 
 const Header = ({ scrollStatus }) => {
