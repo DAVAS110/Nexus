@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import blackLogo from '../assets/Black-Logo.webp';
-import whiteLogo from '../assets/White-Logo.webp';
+import blackLogo from '../assets/Black-Logo.png';
+import whiteLogo from '../assets/White-Logo.png';
 import { HiOutlineXMark, HiOutlineBars3BottomRight } from 'react-icons/hi2';
 
 const Header = ({ scrollStatus }) => {
@@ -83,7 +83,7 @@ const Header = ({ scrollStatus }) => {
         </ul>
       </nav>
       <div className="relative flex h-2 w-full flex-col items-center z-50">
-        <div className="mt-[-5em]">
+        <div className="mt-[-4.5em]">
           <a href="#Home">
             <img
               src={headerStatus === 'black' ? blackLogo : whiteLogo}
