@@ -6,7 +6,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Stand = ({ isMobile }) => {
-  const stand = useGLTF("./NexusStand3dWebsite.gltf");
+  const stand = useGLTF("./StandForWebsite.gltf");
 
   return (
     <mesh>
@@ -23,8 +23,8 @@ const Stand = ({ isMobile }) => {
       <primitive
         object={stand.scene}
         scale={isMobile ? 0.5 : 0.7} // BEGIN: Adjust scale for small screens
-        position={isMobile ? [0, 2, -.7] : [0, -1, -1.5]}
-        rotation={[-0.01, -0.2, 0]}
+        position={isMobile ? [0, 2, -.7] : [0, -8, -1.5]}
+        rotation={[-0.01, -0.5, 0]}
       />
     </mesh>
   );
@@ -54,7 +54,7 @@ const StandCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [5, 0, 35], fov: 15 }}
+      camera={{ position: [5, 0, 110], fov: 15 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
