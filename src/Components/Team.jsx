@@ -49,10 +49,10 @@ const Team = () => {
     >
       <div className="glide-03 relative w-[59em]">
         <div className="overflow-hidden" data-glide-el="track">
-          <div className="whitespace-no-wrap flex-no-wrap relative flex items-center justify-evenly overflow-hidden p-0 z-40">
+          <div className="whitespace-no-wrap flex-no-wrap relative flex justify-evenly overflow-hidden p-0 z-40">
             {users.map(({ id, name, lastName, img, roles, socialMedia }) => (
               <div
-                className="flex flex-col h-[25em] !w-[18em] bg-black px-3 py-4 rounded-lg"
+                className="flex flex-col h-[28em] !w-[18em] bg-black px-3 py-4 rounded-lg"
                 key={id}
               >
                 <div className="flex justify-between items-center h-full mx-2">
@@ -60,7 +60,7 @@ const Team = () => {
                     src={Logo_F1inSchoolcr}
                     alt="F1 IN SCHOOLS Costa Rica"
                     loading="lazy"
-                  />
+                  />  
                   <img
                     src={Logo_NexusWhite}
                     alt="Formula 1 in school Nexus Car Nexus Racing Team Formula 1 competition F1 in School Costa rica Team Silverstone circuit"
@@ -71,7 +71,7 @@ const Team = () => {
                 <div className="flex flex-col items-center justify-center gap-2 my-4">
                   <img
                     src={img}
-                    className="h-[9em]"
+                    className="h-[13em]"
                     alt={lastName}
                     loading="lazy"
                   />
