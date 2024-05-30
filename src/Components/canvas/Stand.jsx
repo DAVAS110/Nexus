@@ -20,6 +20,8 @@ const Stand = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight position={[0, 1, 2]} intensity={15} />
+      <pointLight position={[5, -8, 20]} intensity={1000} />
+
       <primitive
         object={stand.scene}
         scale={isMobile ? 0.5 : 0.7} // BEGIN: Adjust scale for small screens
