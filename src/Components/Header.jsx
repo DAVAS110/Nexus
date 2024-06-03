@@ -9,10 +9,10 @@ const Header = ({ scrollStatus }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (scrollStatus % 50 === 0) {
-      setHeaderStatus('white');
-    } else if (scrollStatus % 50 === 25) {
+    if (scrollStatus == 14 || scrollStatus == 49 || scrollStatus == 84) {
       setHeaderStatus('black');
+    } else if (scrollStatus == 0 || scrollStatus == 35 || scrollStatus == 70 || scrollStatus == 98) {
+      setHeaderStatus('white');
     }
   }, [scrollStatus]);
 

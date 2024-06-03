@@ -21,7 +21,7 @@ const Stand = () => {
           <p className="font-bold text-white">Press and hold to interact with the 3D model.</p>
         </OnRevealWhite>
       </div>
-      <div className="flex h-[25em] w-full lg:w-[90vh] lg:h-full items-center justify-center">
+      <div className="flex h-[30em] w-[30em] lg:w-[90vh] lg:h-full items-center justify-center">
         <StandCanvas />
       </div>
     </section>
