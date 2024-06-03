@@ -7,6 +7,8 @@ import {
   AnimatePresence,
 } from "framer-motion";
 
+import { OnRevealWhite } from "./OnRevealWhite";
+
 import Card1 from "../assets/Car-Cards/Card1.webp";
 import Card2 from "../assets/Car-Cards/Card2.webp";
 import Card3 from "../assets/Car-Cards/Card3.webp";
@@ -87,16 +89,25 @@ const Sponsors = () => {
           </AnimatePresence>
         </div>
         <div>
-          <h2 className="text-white font-SairaBold text-5xl lg:text-6xl mb-8">
-            The <span className="text-[#CC0000]">Fastest Car</span>
-          </h2>
-          <p className="text-white text-justify max-w-[700px] text-base lg:text-lg">
-            The <strong>fastest</strong> car, engineered for speed and precision, boasts
-            aerodynamic design, lightweight materials, and cutting-edge tech.
-            Every detail is optimized for maximum track performance. Clocking
-            just <strong>1.111 milliseconds</strong>, it's a remarkable feat.
-          </p>
-          <strong className="text-white">Slide the images to see more information.</strong>
+          <OnRevealWhite>
+            <h2 className="text-white font-SairaBold text-5xl lg:text-6xl mb-8">
+              The <span className="text-[#CC0000]">Fastest Car</span>
+            </h2>
+          </OnRevealWhite>
+          <OnRevealWhite>
+            <p className="text-white text-justify max-w-[700px] text-base lg:text-lg">
+              The <strong>fastest</strong> car, engineered for speed and
+              precision, boasts aerodynamic design, lightweight materials, and
+              cutting-edge tech. Every detail is optimized for maximum track
+              performance. Clocking just <strong>1.111 milliseconds</strong>,
+              it's a remarkable feat.
+            </p>
+            <p>
+              <strong className="text-white">
+                Slide the images to see more information.
+              </strong>
+            </p>
+          </OnRevealWhite>
         </div>
       </div>
     </section>
