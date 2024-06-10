@@ -6,17 +6,12 @@ import HomePage from './pages/Home/HomePage.jsx';
 const App = () => {
 
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage/>
-            }
-          />
-          <Route path="*" element={<Error404Page/>}/>
-        </Routes>
-      </BrowserRouter>
+      <div className="bg-black h-screen flex justify-center items-center flex-col">
+        <h1 className="text-white text-[5.2em] lg:text-[7em] font-SairaBold tracking-widest">NEXUS</h1>
+        <p className="text-white text-[1.5em]">
+          Coming Soon
+        </p>
+      </div>
   );
 };
 
