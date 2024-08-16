@@ -10,4 +10,7 @@ Este es un website interactivo creado para la competencia de F1 in School Costa 
    www.nexusracingf1.com
 
 ## Video
+  https://github.com/user-attachments/assets/cb466c4e-48c0-4619-93b0-b9151593d022
+
+
   
