@@ -7,7 +7,7 @@ Este es un website interactivo creado para la competencia de F1 in School Costa 
   3. npm run dev
 
 ## Link del Website
-    www.nexusracingf1.com
+   www.nexusracingf1.com
 
 ## Video
   
